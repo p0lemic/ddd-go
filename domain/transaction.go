@@ -1,4 +1,4 @@
-package valueobject
+package domain
 
 import (
 	"time"

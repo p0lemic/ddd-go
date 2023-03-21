@@ -4,7 +4,6 @@ import (
 	"errors"
 
 	"github.com/google/uuid"
-	"github.com/p0lemic/ddd-go/domain/aggregate"
 )
 
 var (
@@ -17,7 +16,7 @@ var (
 )
 
 type CustomerRepository interface {
-	Get(uuid.UUID) (aggregate.Customer, error)
-	Add(aggregate.Customer) error
-	Update(aggregate.Customer) error
+	Get(uuid.UUID) (Customer, error)
+	Add(Customer) error
+	Update(Customer) error
 }
